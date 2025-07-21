@@ -1,0 +1,13 @@
+ingent: v1
+name: transcripcion-agent
+type: agent
+components:
+  - name: speechToText
+    type: skill
+    skillType: speech
+    settings:
+      mode: realtime
+      language: es-ES
+flow:
+  - invoke: speechToText
+    outputs: transcript

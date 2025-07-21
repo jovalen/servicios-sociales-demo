@@ -1,0 +1,13 @@
+  "id": 1,
+  "name": "María Pérez",
+  "details": "María, 34 años, residente en Sevilla. Antecedentes de trastornos de ansiedad. Última visita: 2025-03-12. Contacto: 600123456.",
+  "visits": [
+    {"date": "2025-03-12", "notes": "Seguimiento psicológico, derivada a grupo de apoyo."},
+    {"date": "2025-01-20", "notes": "Evaluación inicial, plan de intervención social."}
+  ],
+  "documents": [
+    {"type": "informe_psicologico", "uri": "docs/maria_informe_psico.pdf"},
+    {"type": "plan_intervencion", "uri": "docs/maria_plan_intervencion.pdf"}
+  ]
+}
+

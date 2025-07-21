@@ -1,0 +1,13 @@
+  "id": 2,
+  "name": "Juan López",
+  "details": "Juan, 45 años, familia monoparental con dos hijos. Dificultades económicas. Última visita: 2025-02-28. Contacto: 600654321.",
+  "visits": [
+    {"date": "2025-02-28", "notes": "Entrega de ayudas de emergencia, seguimiento de becas escolares."},
+    {"date": "2025-01-15", "notes": "Evaluación de necesidades, derivación a servicios de empleo."}
+  ],
+  "documents": [
+    {"type": "certificado_ingresos", "uri": "docs/juan_cert_ingresos.pdf"},
+    {"type": "solicitud_ayuda", "uri": "docs/juan_solicitud_ayuda.pdf"}
+  ]
+}
+

@@ -1,0 +1,31 @@
+ingent: v1
+name: briefing-agent
+type: agent
+components:
+  - name: speechToText
+    type: skill
+    skillType: speech
+    settings:
+      mode: realtime
+      language: es-ES
+  - name: openAI
+    type: skill
+    skillType: openai
+    settings:
+      deployment: gpt-35-turbo
+      stream: true
+flow:
+  - invoke: speechToText
+    outputs: userQuery
+  - invoke: openAI
+    inputs:
+      messages:
+        - role: system
+          content: |
+            Eres un asistente de un trabajador social.
+        - role: user
+          content: |
+            El trabajador dice: "{{userQuery}}"
+            Historial: {{sessionState.historial}}
+            Próximos eventos: {{sessionState.events}}
+    outputs: aiResponse
